@@ -4,7 +4,10 @@
 
 O projeto Horta Urbana tem como objetivo proporcionar aos integrantes a experiência prática de criação e desenvolvimento do layout de um site, aplicando as melhores práticas de design e trabalho colaborativo.
 
-> Stack's
+<div align="center">
+  <p>👀 Prévia</p>
+  <img width="400px" src="./assets/images/previa.png" alt="Prévia do projeto">
+</div><br>
 
 **Colaboradores:** Igor Oliveira, Evanói Nogueira, Flávia Kethellen, Jessica Damaceno, Paulo Bezerra
 
@@ -42,6 +45,7 @@ O projeto Horta Urbana tem como objetivo proporcionar aos integrantes a experiê
 ![image](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![image](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![image](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![image](https://img.shields.io/badge/StandardJS-F4f4f4?style=for-the-badge&logo=javascript&logoColor=red)
 
 ## ⚙ Instalação
 
@@ -59,7 +63,7 @@ Para começar a usar este projeto, siga as etapas abaixo:
 
 ## 🚀 Uso 
 
-Para visualizar o projeto, abra o arquivo `index.html` em seu navegador. Certifique-se de que todos os arquivos CSS e JavaScript estejam no diretório correto para garantir que o projeto funcione como esperado.
+Para visualizar o projeto, após instalação abra o arquivo `index.html` em seu navegador. Certifique-se de que todos os arquivos CSS e JavaScript estejam no diretório correto para garantir que o projeto funcione como esperado.
 
 ## 🧩 Funcionalidades
 
