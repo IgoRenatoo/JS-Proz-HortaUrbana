@@ -1,39 +1,39 @@
 .container {
-  flex: 1;
   max-width: 800px;
   margin: 2em auto;
   padding: 1em;
-  color: black;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  background-color: #fff;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
 }
 
 .container h2 {
-  color: #4CAF50;
-  margin-bottom: 1em;
   text-align: center;
+  margin-bottom: 1em;
+  color: #4CAF50;
 }
 
 .container p {
-  font-size: 1.1em;
   margin: 0.5em 0;
+  font-size: 1.1em;
   line-height: 1.5;
 }
 
 .footer {
+  text-align: center;
+  margin-top: auto;
+  padding: 1em;
   background-color: #4CAF50;
   color: #fff;
-  text-align: center;
-  padding: 1em;
-  margin-top: auto;
 }
 
 /* Responsivo */
 @media (max-width: 600px) {
   .container {
-    padding: 0.8em;
     margin: 1em;
+    padding: 0.8em;
   }
   
   .header, .footer {

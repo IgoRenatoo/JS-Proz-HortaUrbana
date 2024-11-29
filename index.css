@@ -2,8 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 400px;
   margin: 0 auto;
   font-size: 60px;
-  height: 400px;
   color: var(--bkground2);
 }

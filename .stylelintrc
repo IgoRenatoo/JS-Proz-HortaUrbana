@@ -1,0 +1,26 @@
+{
+  "plugins": [
+    "stylelint-order"
+  ],
+  "rules": {
+    "order/properties-order": [
+      "display",
+      "position", "top", "right", "bottom", "left",
+      "flex-direction", "flex-wrap", "justify-content", "align-items", "text-align",
+      "grid", "grid-template-columns", "grid-template-rows", "grid-template-areas", "grid-gap",
+      "width", "min-width", "max-width", "height", "min-height", "max-height",
+      "margin","margin-top", "margin-right", "margin-bottom", "margin-left",
+      "padding","padding-top", "padding-right", "padding-bottom", "padding-left",
+      "border", "border-radius", "border-width", "border-style", "border-color",
+      "font-family", "font-size", "font-weight", "font-style", "line-height", "letter-spacing",
+      "background-color", "background-image", "background-repeat", "background-position", "background-size",
+      "color",
+      "box-shadow", "text-shadow",
+      "transition", "transition-duration", "transition-property", "transition-timing-function",
+      "animation", "animation-name", "animation-duration", "animation-timing-function", "animation-delay",
+      "text-decoration","list-style","cursor", "outline", "filter", "resize", "pointer-events", "flex",
+      "z-index"
+    ]
+  }
+}
+

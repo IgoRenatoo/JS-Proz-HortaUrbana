@@ -1,0 +1,19 @@
+{
+  "name": "js-proz-hortaurbana",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "css": "npx stylelint **/*.css",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.6.0",
+    "husky": "^8.0.0",
+    "stylelint-order": "^6.0.4"
+  }
+}

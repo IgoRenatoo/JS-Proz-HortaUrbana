@@ -14,18 +14,18 @@
   box-sizing: border-box;
 }
 body {
-  font-family: Arial, sans-serif;
-  background-color: var(--bkground-content);
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--bkground-content);
 }
 
 .welcome {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3px 10px;
   height: 32px;
+  padding: 3px 10px;
   background-color: var(--bkground1);
   color: var(--text-color);
 }
@@ -34,41 +34,41 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(./assets/images/header/background-header.png) center / cover no-repeat;
-  color: #fff;
   text-align: center;
   height: 250px;
+  background: url(./assets/images/header/background-header.png) center / cover no-repeat;
+  color: #fff;
 }
 .header section {
   display: flex;
-  align-items: end;
   justify-content: center;
-  padding: 20px;
+  align-items: end;
   height: 100%;
+  padding: 20px;
 }
 .header h1 {
-  font-size: 100px;
-  line-height: 70px;
-  font-weight: 300;
-  letter-spacing: 6px;
   font-family: "Zen Tokyo Zoo";
+  font-size: 100px;
+  font-weight: 300;
+  line-height: 70px;
+  letter-spacing: 6px;
 }
 
 .search {
   display: flex;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 4px 8px;
   width: 30%;
   max-width: 250px;
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
 }
 .search input {
   border: none;
   background: none;
+  font-size: 16px;
   outline: none;
   flex: 1;
-  font-size: 16px;
 }
 .search span {
   cursor: pointer;
@@ -81,24 +81,24 @@ body {
   box-shadow: 0 2px 4px var(--bkground1);
 }
 .navbar a {
-  color: var(--text-color);
-  padding: 10px 0;
-  text-decoration: none;
   text-align: center;
-  letter-spacing: 1.5px;
-  font-size: 1.1em;
-  border-radius: 10px;
   width: 150px;
+  padding: 10px 0;
+  border-radius: 10px;
+  font-size: 1.1em;
+  letter-spacing: 1.5px;
+  color: var(--text-color);
+  text-decoration: none;
 }
 .navbar a:hover {
   box-shadow: 0 1px 2px var(--bkground1);
 }
 
 .container {
-  padding: 20px;
   max-width: 800px;
-  margin: 0 auto;
   min-height: calc(100vh - 300px);
+  margin: 0 auto;
+  padding: 20px;
 }
 .container h2 {
   text-align: center;
@@ -138,10 +138,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--text-color);
+  padding: 10px;
   border: solid 1px var(--text-color);
   border-radius: 4px;
-  padding: 10px;
+  color: var(--text-color);
 }
 .footer-socials a[uk-icon="instagram"]:hover {
   background: linear-gradient(130deg,#515BD4,#8134AF,#DD2A7B,#FEDA77,#F58529);  
@@ -165,8 +165,8 @@ footer {
   display: flex;
   justify-content: center;
   padding: 10px 0;
-  background-color: var(--bkground1);
   font-size: 14px;
+  background-color: var(--bkground1);
   gap: 10px;
 }
 

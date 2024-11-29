@@ -1,17 +1,17 @@
 .adubos-list {
-  list-style: none;
-  padding: 0;
   margin: 20px 0;
+  padding: 0;
+  list-style: none;
 }
 
 .adubos-list li {
-  background-color: #f4f4f4;
-  border: 1px solid #ddd;
   margin-bottom: 15px;
   padding: 15px;
+  border: 1px solid #ddd;
   border-radius: 8px;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f4f4f4;
   box-shadow: 0 1px 2px rgb(0, 255, 0);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .adubos-list li:hover {
@@ -20,10 +20,10 @@
 }
 
 .adubos-list a {
-  text-decoration: none;
-  color: #2e7d32;
   font-size: 1.2em;
   font-weight: bold;
+  color: #2e7d32;
+  text-decoration: none;
 }
 
 .adubos-list a:hover {

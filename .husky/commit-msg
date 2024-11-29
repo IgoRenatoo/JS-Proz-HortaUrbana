@@ -1,0 +1,20 @@
+npx commitlint --edit $1 || {
+  echo "Padrão desejado: <type>[changed file]: <description>"
+  echo ""
+  echo "Types aceitos: init, feat, fix, docs, style, refactor, test, chore, deploy"
+  echo ""
+  echo "Exemplo de tipos e descrições:"
+  echo "    init: :tada: Iniciação do projeto."
+  echo "    feat: :sparkles: Adição de funcionalidade."
+  echo "    fix: :bug: Correção de defeito."
+  echo "    docs: :memo: Mudança em documentação."
+  echo "    style: :lipstick: Mudança de formatação ou estilo."
+  echo "    refactor: :recycle: Mudança na organização do código."
+  echo "    test: :test_tube: Adição ou mudança de um teste."
+  echo "    chore: :wrench: Mudança ou adição de dependências e script."
+  echo "    deploy: :rocket: Finalização do projeto."
+  echo ""
+  echo "❌ Erro: A mensagem de commit não segue o padrão estabelecido. Corrija a mensagem e tente novamente."
+  exit 1
+}
+
