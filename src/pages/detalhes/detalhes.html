@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Legumes - Horta Urbana</title>
+    <title>Detalhes - Horta Urbana</title>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="../../global.css" />
-    <link rel="stylesheet" href="./legumes.css" />
+    <link rel="stylesheet" href="./detalhes.css" />
   </head>
   <body>
     <section>
@@ -17,29 +17,27 @@
         <section>
           <h1>Horta Urbana</h1>
           <div class="search">
-            <input type="search" placeholder="O que você procura hoje?" />
+            <input type="search" placeholder="O que você procura hoje?">
             <span>🔍</span>
           </div>
         </section>
       </header>
-
+  
       <nav class="navbar">
-        <a href="../../index.html">Início</a>
+        <a href="../../../index.html">Início</a>
         <a href="../verduras/verduras.html">Verduras</a>
-        <a href="./legumes.html">Legumes</a>
+        <a href="../legumes/legumes.html">Legumes</a>
         <a href="../adubos/adubos.html">Adubo</a>
         <a href="">Cronograma</a>
       </nav>
     </section>
 
     <main class="container">
-      <h2>Legumes</h2>
-      <ul class="legumes-list">
-        <li><a href="../detalhes/detalhes.html">Cenoura</a></li>
-        <li><a href="../detalhes/detalhes.html">Beterraba</a></li>
-        <li><a href="../detalhes/detalhes.html">Tomate</a></li>
-        <li><a href="../detalhes/detalhes.html">Pepino</a></li>
-      </ul>
+      <h2 id="item-title">Nome do Item</h2>
+      <p id="plantio">Plantio:</p>
+      <p id="horta">Horta:</p>
+      <p id="adubo">Adubo:</p>
+      <p id="atencao">Atenção:/p>
     </main>
 
     <footer>
@@ -74,5 +72,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
+    <script src="detalhes.js"></script>
   </body>
 </html>
