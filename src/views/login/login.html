@@ -7,14 +7,11 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
   <!-- Estilos CSS -->
-  <link rel="stylesheet" href="./global.css" />
-</head>
-
+  <link rel="stylesheet" href="../../../global.css">
+  <link rel="stylesheet" href="login.css">
 <body>
   <header>
-    <div class="welcome">
-      <p>Olá, sejam bem vindos!</p>
-    </div>
+    <div class="welcome"></div>
     <section class="header">
       <article>
         <h1>Horta Urbana</h1>
@@ -26,20 +23,35 @@
     </section>
 
     <nav class="navbar">
-      <a href="index.html">Início</a>
-      <a href="./src/views/shop/micro-verde.html">Micro-verde</a>
-      <a href="./src/views/shop/legumes.html">Legumes</a>
-      <a href="./src/views/shop/temperos.html">Tempero</a>
-      <a href="./src/views/shop/frutas.html">Frutas</a>
-      <a href="./src/views/shop/flores.html">Flores</a>
-      <a href="./src/views/login/login.html">Login</a>
+      <a href="../../../index.html">Início</a>
+      <a href="../shop/micro-verde.html">Micro-verde</a>
+      <a href="../shop/legumes.html">Legumes</a>
+      <a href="../shop/temperos.html">Tempero</a>
+      <a href="../shop/frutas.html">Frutas</a>
+      <a href="../shop/flores.html">Flores</a>
+      <a href="./login.html">Login</a>
     </nav>
   </header>
 
   <section class="container">
-    <p class="dev">Em desenvolvimento... </p>
+    <div class="x">
+      <h2>Login</h2>
+      <form class="login-form" action="#" method="POST">
+        <div class="input-data">
+          <label for="username">Usuário:</label>
+          <input type="text" id="username" name="username" placeholder="Digite seu usuário" required>
+        </div>
+        <div class="input-data">
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+        </div>
+        <button type="submit" class="btn-login">Entrar</button>
+        <a href="#" class="link-acess">Criar conta</a>
+        <a href="#" class="link-acess">Esqueceu a senha?</a>
+      </form>
+    </div>
   </section>
-
+  
   <footer>
     <main class="footer-content">
       <section class="footer-section">

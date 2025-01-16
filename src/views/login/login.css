@@ -1,0 +1,62 @@
+.x {
+  display: block;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--bkground-content);
+  box-shadow: 0 2px 4px var(--bkground1);
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--details1);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-data {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-data label {
+  color: var(--bkground1);
+}
+
+.input-data input {
+  display: block;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid var(--details2);
+  border-radius: 4px;
+  outline: none;
+}
+
+.input-data input:focus {
+  border-color: var(--details1);
+  box-shadow: 0 0 5px var(--details1);
+}
+
+.btn-login {
+  display: block;
+  padding: 10px 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--details1);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+  background-color: var(--details2);
+}

@@ -3,43 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adubo - Horta Urbana</title>
+    <title>Horta Urbana</title>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet" />
     <!-- Estilos CSS -->
-    <link rel="stylesheet" href="../../global.css" />
-    <link rel="stylesheet" href="./adubos.css" />
+    <link rel="stylesheet" href="../../../global.css">
+    <link rel="stylesheet" href="./verduras.css" />
   </head>
   <body>
-    <section>
+    <header>
       <div class="welcome"></div>
-      <header class="header">
-        <section>
+      <section class="header">
+        <article>
           <h1>Horta Urbana</h1>
           <div class="search">
             <input type="search" placeholder="O que você procura hoje?" />
             <span>🔍</span>
           </div>
-        </section>
-      </header>
-
+        </article>
+      </section>
+      
       <nav class="navbar">
         <a href="../../../index.html">Início</a>
-        <a href="../verduras/verduras.html">Verduras</a>
-        <a href="../legumes/legumes.html">Legumes</a>
-        <a href="./adubos.html">Adubo</a>
-        <a href="">Cronograma</a>
+        <a href="./micro-verde.html">Micro-verde</a>
+        <a href="./legumes.html">Legumes</a>
+        <a href="./temperos.html">Tempero</a>
+        <a href="./frutas.html">Frutas</a>
+        <a href="./flores.html">Flores</a>
+        <a href="../login/login.html">Login</a>
       </nav>
-    </section>
+    </header>
 
-    <main class="container">
-      <h2>Adubos</h2>
-      <ul class="adubos-list">
-        <li><a href="../detalhes/detalhes.html">Composto</a></li>
-        <li><a href="../detalhes/detalhes.html">Orgânico</a></li>
-        <li><a href="../detalhes/detalhes.html">Mineral</a></li>
-        <li><a href="../detalhes/detalhes.html">Verde</a></li>
-      </ul>
+    <main id="Fruta">
     </main>
 
     <footer>
@@ -65,13 +60,13 @@
           <p>Endereço: Rua da Horta 123, Estado - Cidade</p>
         </section>
       </main>
-      
+
       <div class="footer-right">
         <p>HortaUrbana - 2024 - Todos os Direitos Reservados.</p>
         <p><a class="link-acess" href="">Políticas de Privacidade</a></p>
       </div>
     </footer>
-
+    <script type="module" src="../../services/get-itens-service.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
   </body>

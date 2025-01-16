@@ -36,10 +36,10 @@ body {
   align-items: center;
   text-align: center;
   height: 250px;
-  background: url(./assets/images/header/background-header.png) center / cover no-repeat;
+  background: url(./src/assets/images/header/background-header.png) center / cover no-repeat;
   color: #fff;
 }
-.header section {
+.header article {
   display: flex;
   justify-content: center;
   align-items: end;
@@ -104,6 +104,63 @@ body {
   text-align: center;
   font-size: 2em;
   color: var(--smoke);
+}
+
+/* Estilo para a tag <main> */
+main {
+  display: grid; /* Usa grid layout */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsivo */
+  gap: 20px; /* Espaçamento entre os itens */
+  padding: 20px; /* Espaçamento interno */
+  background-color: #f9f9f9; /* Fundo claro para contraste */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo para cada item */
+.item {
+  background-color: #fff; /* Fundo branco */
+  border: 1px solid #ddd; /* Borda leve */
+  border-radius: 10px; /* Bordas arredondadas */
+  overflow: hidden; /* Garante que o conteúdo não ultrapasse */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra moderna */
+  transition: transform 0.3s, box-shadow 0.3s; /* Animação para hover */
+  padding: 15px; /* Espaçamento interno */
+}
+
+/* Efeito de hover */
+.item:hover {
+  transform: scale(1.05); /* Ampliação no hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Sombra mais forte no hover */
+}
+
+/* Estilo para a imagem */
+.item img {
+  width: 100%; /* Largura total da div do item */
+  height: auto; /* Mantém a proporção */
+  border-radius: 8px; /* Bordas arredondadas */
+  margin-bottom: 15px; /* Espaçamento abaixo da imagem */
+}
+
+/* Estilo para o título */
+.item h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Estilo para o texto */
+.item p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* Destaque para preços e informações importantes */
+.item p strong {
+  color: #e63946; /* Destaque vermelho */
 }
 
 footer {
@@ -171,7 +228,7 @@ footer {
 }
 
 .link-acess {
-  color: var(--text-color);
+  color: var(--details1);
   text-decoration: none;
 }
 .link-acess:hover {
