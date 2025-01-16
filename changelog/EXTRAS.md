@@ -29,3 +29,18 @@
 [ ] Adicionar 10 produtos no minímo em cada categoria.
 
 [ ] Criar padrão de ID em blocos de 1000. (1000-1999 = hortaliça, 2000-2999 = legumes)
+
+## Sprint 16/01/2025
+
+[ ] Realizar responsividade para uso em Smartfone pequenos 320px - 480px
+
+[ ] Realizar responsividade para uso em Smartfone médios 481px - 768px
+
+[ ] Realizar responsividade para uso em Tablets 769px - 1024px
+
+[ ] Realizar responsividade para uso em Desktops Médios 1025px - 1440px
+
+[ ] Realizar responsividade para uso em Desktops Grandes: >1441px
+
+[ ] Melhorar a foto de capa com imagem prória de alta qualidade
+

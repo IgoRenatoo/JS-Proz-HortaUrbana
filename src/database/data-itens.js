@@ -2,7 +2,7 @@ export const data_itens = [
   // Micro-verdes
   {
     id: 1001,
-    name: 'Micro-verde de Rabanete',
+    name: 'Rabanete',
     pic: '',
     description: 'Micro-verde com crescimento rápido, pronto em poucos dias.',
     category: 'Micro-verde',
@@ -15,7 +15,7 @@ export const data_itens = [
   },
   {
     id: 1002,
-    name: 'Micro-verde de Mostarda',
+    name: 'Mostarda',
     pic: '',
     description: 'Micro-verde de sabor picante, ideal para saladas.',
     category: 'Micro-verde',
@@ -28,7 +28,7 @@ export const data_itens = [
   },
   {
     id: 1003,
-    name: 'Micro-verde de Manjericão',
+    name: 'Manjericão',
     pic: '',
     description: 'Aromático e fresco, ótimo para temperos.',
     category: 'Micro-verde',
@@ -41,7 +41,7 @@ export const data_itens = [
   },
   {
     id: 1004,
-    name: 'Micro-verde de Girassol',
+    name: 'Girassol',
     pic: '',
     description: 'Rico em nutrientes, ideal para consumo diário.',
     category: 'Micro-verde',
@@ -54,7 +54,7 @@ export const data_itens = [
   },
   {
     id: 1005,
-    name: 'Micro-verde de Beterraba',
+    name: 'Beterraba',
     pic: '',
     description: 'Com um toque doce, combina com várias receitas.',
     category: 'Micro-verde',
