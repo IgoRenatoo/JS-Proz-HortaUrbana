@@ -62,7 +62,7 @@ function displayItensByCategory() {
 
     thisItem.innerHTML = `
       <h2>${item.name}</h2>
-      <img style="width: 200px;" src="../../assets/images/product/horta.png" alt="" loading="lazy">
+      <img style="width: 200px;" src="../../assets/images/product/${item.pic}" alt="" loading="lazy">
       <p class="description">${item.description}</p>
       <p><strong>Preço:</strong> R$ ${item.price.toFixed(2)}</p>
       <p><strong>Fabricante:</strong> ${item.manufacturer}</p>
