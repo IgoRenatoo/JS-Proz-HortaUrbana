@@ -62,11 +62,11 @@ function displayItensByCategory() {
 
     thisItem.innerHTML = `
       <h2>${item.name}</h2>
-      <img style="width: 200px;" src="../../assets/images/product/${item.pic}" alt="" loading="lazy">
-      <p class="description">${item.description}</p>
+      <img style="width: 200px;" src="../../assets/images/product/${item.pic}" alt="" loading="lazy">      
       <p><strong>Preço:</strong> R$ ${item.price.toFixed(2)}</p>
       <p><strong>Fabricante:</strong> ${item.manufacturer}</p>
       <p><strong>Temporada:</strong> ${item.season.join(', ')}</p>
+      <button>Descrição</button>
       <div class="cart">
         <button class="subItem">-</button>
         <span class="quantity">1</span>
