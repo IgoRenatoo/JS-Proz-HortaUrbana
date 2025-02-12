@@ -10,7 +10,7 @@
 
 [❌] Sinalizar no Figma quais textos serão link's.
 
-[ ] Definir padrão de cores para o DarkMode.
+[✅] Definir padrão de cores para o DarkMode.
 
 [✅] Tirar o detalhamento de como contribuir do README e passar para a seção Wiki do Github.
 
@@ -51,3 +51,13 @@
 [ ] Criar a lógica de exibição do button descrição.
 
 [ ] Criar a lógica do Darkmode.
+
+## Sprint 12/02/2025
+
+[ ] Atualizar informações do Footer.
+
+[ ] Desenvolver apresentação no PowerPoint.
+
+[ ] Padronizar tamanho das imagens armazenadas.
+
+[✅] Adicionar lógica darkmode.

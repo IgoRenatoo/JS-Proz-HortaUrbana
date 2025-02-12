@@ -3,15 +3,28 @@
   --bkground2: rgb(100, 110, 55);
   --bkground-content: rgb(255, 250, 225);
   --border-color: black;
-  --text-color: #fff;
+  --text-color: black;
+  --shadow: rgb(0, 0, 0, 0.2);
   --details1: rgb(190, 110, 40);
   --details2: rgb(220, 160, 95);
   --smoke: rgb(75, 175, 80);
+}
+.dark {
+  --bkground1: rgb(10, 15, 50);
+  --bkground2: rgb(30, 40, 100);
+  --bkground-content: rgb(5, 10, 45);
+  --border-color: rgb(200, 200, 255);
+  --text-color: #f0f0f0;
+  --shadow: rgb(255, 255, 255);
+  --details1: rgb(80, 170, 250);
+  --details2: rgb(100, 200, 255);
+  --smoke: rgb(130, 75, 180);
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: var(--text-color);
 }
 body {
   margin: 0;
@@ -19,7 +32,14 @@ body {
   font-family: Arial, sans-serif;
   background-color: var(--bkground-content);
 }
-
+.toggle {
+  display: inline-block;
+  cursor: pointer;
+}
+.toggle svg {
+  width: 24px;
+  height: 24px;
+}
 .welcome {
   display: flex;
   justify-content: space-between;
@@ -27,7 +47,9 @@ body {
   height: 32px;
   padding: 3px 10px;
   background-color: var(--bkground1);
-  color: var(--text-color);
+}
+.welcome p {
+  color: #fff;
 }
 
 /*
@@ -55,6 +77,7 @@ body {
   font-weight: 300;
   line-height: 70px;
   letter-spacing: 6px;
+  color: #fff;
 }
 .search {
   display: flex;
@@ -80,7 +103,7 @@ body {
   justify-content: space-around;
   padding: 10px 0;
   background-color: var(--bkground2);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px var(--shadow);
   gap: 10px;
 }
 .navbar a {
@@ -90,7 +113,7 @@ body {
   border-radius: 10px;
   font-size: 1.1rem;
   letter-spacing: 1px;
-  color: var(--text-color);
+  color: #fff;
   transition: background-color 0.3s ease, transform 0.3s ease;
   text-decoration: none;
 }
@@ -124,7 +147,7 @@ Bloco provisório
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px var(--shadow);
   gap: 30px;
 }
 .item {
@@ -132,13 +155,11 @@ Bloco provisório
   border: 1px solid #ddd;
   border-radius: 10px;
   background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: box-shadow 0.3s;
   overflow: hidden;
 }
 .item:hover {
-  transform: scale(1.005);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px var(--shadow);
 }
 .item img {
   width: 100%;

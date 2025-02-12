@@ -13,8 +13,8 @@
   padding: 20px;
   font-size: 16px;
   letter-spacing: 1.5px;
-  border-top: solid 1px black;
-  border-bottom: solid 1px black;
+  border-top: solid 1px var(--text-color);
+  border-bottom: solid 1px var(--text-color);
 }
 .section-one img {
   width: 60%;
@@ -38,8 +38,8 @@
   font-weight: bold;
   letter-spacing: 1.5px;
   color: brown;
-  border-top: solid 1px black;
-  border-bottom: solid 1px black;
+  border-top: solid 1px var(--text-color);
+  border-bottom: solid 1px var(--text-color);
 }
 .section-two img {
   position: absolute;
@@ -53,4 +53,8 @@
   border-radius: 50%;
   background-color: brown;
   transform: translateX(-500px);
+}
+
+.section-three {
+  
 }
