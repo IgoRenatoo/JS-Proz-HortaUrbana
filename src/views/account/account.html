@@ -7,14 +7,11 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
   <!-- Estilos CSS -->
-  <link rel="stylesheet" href="./global.css" />
-</head>
-
+  <link rel="stylesheet" href="../../../global.css">
+  <link rel="stylesheet" href="account.css">
 <body>
   <header>
-    <div class="welcome">
-      <p>Olá, sejam bem vindos!</p>
-    </div>
+    <div class="welcome"></div>
     <section class="header">
       <article>
         <h1>Horta Urbana</h1>
@@ -26,20 +23,40 @@
     </section>
 
     <nav class="navbar">
-      <a href="index.html">Início</a>
-      <a href="./src/views/shop/micro-verde.html">Micro-verde</a>
-      <a href="./src/views/shop/legumes.html">Legumes</a>
-      <a href="./src/views/shop/temperos.html">Tempero</a>
-      <a href="./src/views/shop/frutas.html">Frutas</a>
-      <a href="./src/views/shop/flores.html">Flores</a>
-      <a href="./src/views/login/login.html">Login</a>
+      <a href="../../../index.html">Início</a>
+      <a href="../shop/micro-verde.html">Micro-verde</a>
+      <a href="../shop/legumes.html">Legumes</a>
+      <a href="../shop/temperos.html">Tempero</a>
+      <a href="../shop/frutas.html">Frutas</a>
+      <a href="../shop/flores.html">Flores</a>
+      <a href="./login.html">Login</a>
     </nav>
   </header>
 
-  <section class="provisional">
-    <p class="dev">Em desenvolvimento... </p>
-  </section>
-
+  <main>
+    <div class="container">
+      <h2>Criar Conta</h2>
+      <form class="register-form" id="register-form">
+        <div class="input-data">
+          <label for="fullname">Nome Completo:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Digite seu nome completo" required>
+        </div>
+        <div class="input-data">
+          <label for="new-username">Usuário:</label>
+          <input type="text" id="new-username" name="new-username" placeholder="Crie um nome de usuário" required>
+        </div>
+        <div class="input-data">
+          <label for="new-password">Senha:</label>
+          <input type="password" id="new-password" name="new-password" placeholder="Crie uma senha (mínimo 4 caracteres)" minlength="4" required>
+        </div>
+        <button type="submit" class="btn-login">Registrar</button>
+        <div class="form-links">
+          <a href="../login/login.html" class="link-acess">Já tem uma conta? Faça Login</a>
+        </div>
+      </form>
+    </div>
+  </main>
+  
   <footer>
     <main class="footer-content">
       <section class="footer-section">
@@ -66,7 +83,8 @@
       <p>HortaUrbana - 2024 - Todos os Direitos Reservados.</p>
       <p><a class="link-acess" href="">Políticas de Privacidade</a></p>
     </div>
-  </footer>  
+  </footer>
+  <script src="./create-account.js" type="module" ></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
 </body>

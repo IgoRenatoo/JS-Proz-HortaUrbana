@@ -8,13 +8,14 @@
   background-color: var(--bkground1);
   box-shadow: 0 4px 8px var(--bkground2);
 }
+
 .container h2 {
   text-align: center;
   margin-bottom: 20px;
   color: var(--details1);
 }
 
-.login-form {
+.register-form {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -25,9 +26,11 @@
   flex-direction: column;
   gap: 5px;
 }
+
 .input-data label {
   color: var(--text-color);
 }
+
 .input-data input {
   display: block;
   padding: 8px;
@@ -36,6 +39,7 @@
   font-size: 16px;
   outline: none;
 }
+
 .input-data input:focus {
   border-color: var(--details1);
   box-shadow: 0 0 5px var(--details1);
@@ -52,6 +56,23 @@
   transition: background-color 0.3s;
   cursor: pointer;
 }
+
 .btn-login:hover {
   background-color: var(--details2);
+}
+
+.form-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.link-acess {
+  color: var(--details1);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.link-acess:hover {
+  color: var(--details2);
 }

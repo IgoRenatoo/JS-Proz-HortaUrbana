@@ -33,10 +33,10 @@
     </nav>
   </header>
 
-  <section class="container">
-    <div class="x">
+  <main>
+    <div class="container">
       <h2>Login</h2>
-      <form class="login-form" action="#" method="POST">
+      <form class="login-form">
         <div class="input-data">
           <label for="username">Usuário:</label>
           <input type="text" id="username" name="username" placeholder="Digite seu usuário" required>
@@ -46,11 +46,11 @@
           <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
         </div>
         <button type="submit" class="btn-login">Entrar</button>
-        <a href="#" class="link-acess">Criar conta</a>
-        <a href="#" class="link-acess">Esqueceu a senha?</a>
+        <a href="../account/account.html" class="link-acess">Criar conta</a>
+        <a href="#" id="recoverPasswd" class="link-acess">Esqueceu a senha?</a>
       </form>
     </div>
-  </section>
+  </main>
   
   <footer>
     <main class="footer-content">
@@ -78,7 +78,8 @@
       <p>HortaUrbana - 2024 - Todos os Direitos Reservados.</p>
       <p><a class="link-acess" href="">Políticas de Privacidade</a></p>
     </div>
-  </footer>  
+  </footer>
+  <script src="./login.js" type="module" ></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
 </body>
