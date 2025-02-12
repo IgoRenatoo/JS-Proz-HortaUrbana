@@ -69,8 +69,8 @@
 
 .link-acess {
   color: var(--details1);
-  text-decoration: none;
   transition: color 0.3s;
+  text-decoration: none;
 }
 
 .link-acess:hover {

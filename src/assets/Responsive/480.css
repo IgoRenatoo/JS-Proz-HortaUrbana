@@ -1,0 +1,32 @@
+@media (max-width: 480px) {
+
+  .header h1 {
+    font-size: 40px;
+    line-height: 30px;
+  }
+  .header article {
+    align-items: center;
+  }
+  .search {
+    display: none;
+  }
+  .navbar {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  .navbar a {
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-section {
+    max-width: 100%;
+  }
+  .footer-socials {
+    justify-content: center;
+  }
+}

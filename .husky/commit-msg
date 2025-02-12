@@ -1,3 +1,6 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
 npx commitlint --edit $1 || {
   echo "Padrão desejado: <type>[changed file]: <description>"
   echo ""
@@ -17,4 +20,3 @@ npx commitlint --edit $1 || {
   echo "❌ Erro: A mensagem de commit não segue o padrão estabelecido. Corrija a mensagem e tente novamente."
   exit 1
 }
-

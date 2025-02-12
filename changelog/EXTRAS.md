@@ -32,7 +32,7 @@
 
 ## Sprint 16/01/2025
 
-[ ] Realizar responsividade para uso em Smartfone pequenos 320px - 480px.
+[✅] Realizar responsividade para uso em Smartfone pequenos 320px - 480px.
 
 [ ] Realizar responsividade para uso em Smartfone médios 481px - 768px.
 
@@ -46,7 +46,7 @@
 
 ## Sprint 30/01/2025
 
-[ ] Implementar persistência dos dados de cadastro no localStorage.
+[✅] Implementar persistência dos dados de cadastro no localStorage.
 
 [ ] Criar a lógica de exibição do button descrição.
 
