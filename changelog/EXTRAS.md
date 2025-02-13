@@ -6,7 +6,7 @@
 
 ## Sprint 21/11/2024
 
-[ ] Revisar o layout do Figma.
+[ ] Revisar o layout do Figma. ~> Evanói
 
 [❌] Sinalizar no Figma quais textos serão link's.
 
@@ -20,11 +20,11 @@
 
 [✅] Refatorar a navebar, contendo os tópicos (Home, Hortaliças, Microverdes, Legumes, Frutas, Flores, Cronograma Anual ).
 
-[ ] Tirar a parte Comece agora / Recursos uteis da home.
+[ ] Tirar a parte Comece agora / Recursos uteis da home. ~> Evanói
 
-[ ] Incorporar a page 'tipos de plantio','Hortaliças' e 'Adubos' na home.
+[ ] Incorporar a page 'tipos de plantio','Hortaliças' e 'Adubos' na home. ~> Evanói
 
-[ ] Reformular e apresentar novo layout e estrutura da home.
+[ ] Reformular e apresentar novo layout e estrutura da home. ~> Evanói
 
 [✅] Adicionar 5 produtos no minímo em cada categoria.
 
@@ -34,30 +34,42 @@
 
 [✅] Realizar responsividade para uso em Smartfone pequenos 320px - 480px.
 
-[ ] Realizar responsividade para uso em Smartfone médios 481px - 768px.
+[ ] Realizar responsividade para uso em Smartfone médios 481px - 768px. ~> Igor
 
-[ ] Realizar responsividade para uso em Tablets 769px - 1024px.
+[ ] Realizar responsividade para uso em Tablets 769px - 1024px. ~> Igor
 
-[ ] Realizar responsividade para uso em Desktops Médios 1025px - 1440px.
+[ ] Realizar responsividade para uso em Desktops Médios 1025px - 1440px. ~> Igor
 
-[ ] Realizar responsividade para uso em Desktops Grandes: >1441px.
+[ ] Realizar responsividade para uso em Desktops Grandes: >1441px. ~> Igor
 
-[ ] Melhorar a foto de capa com imagem prória de alta qualidade.
+[ ] Melhorar a foto de capa com imagem prória de alta qualidade. ~> Igor
 
 ## Sprint 30/01/2025
 
 [✅] Implementar persistência dos dados de cadastro no localStorage.
 
-[ ] Criar a lógica de exibição do button descrição.
+[ ] Criar a lógica de exibição do button descrição. ~> Igor
 
-[ ] Criar a lógica do Darkmode.
+[✅] Criar a lógica do Darkmode.
 
 ## Sprint 12/02/2025
 
-[ ] Atualizar informações do Footer.
+[✅] Atualizar informações do Footer. 
 
-[ ] Desenvolver apresentação no PowerPoint.
+[✅] Desenvolver apresentação no PowerPoint.
 
-[ ] Padronizar tamanho das imagens armazenadas.
+[ ] Padronizar tamanho das imagens armazenadas. ~> Evanói
 
 [✅] Adicionar lógica darkmode.
+
+[ ] Adicionar endereço no cadastro de usuário. ~> Igor
+
+[ ] Levantar pendências dos requisitos de cadastro de usuário. ~> Igor
+
+[ ] Levantar pendências dos requisitos de cadastro de produtos. ~> Igor
+
+[ ] Levantar pendências dos requisitos do carrinho de compras. ~> Igor
+
+[ ] Melhorar EER do fluxo de compra. ~> Igor
+
+[ ] Adicionar `Strong` nas propriedades do footer no html. ~> Evanói

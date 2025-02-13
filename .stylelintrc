@@ -19,7 +19,7 @@
       "transition", "transition-duration", "transition-property", "transition-timing-function",
       "animation", "animation-name", "animation-duration", "animation-timing-function", "animation-delay",
       "text-decoration","list-style","cursor", "outline", "filter", "resize", "pointer-events", "flex",
-      "z-index"
+      "z-index", "gap"
     ]
   }
 }
