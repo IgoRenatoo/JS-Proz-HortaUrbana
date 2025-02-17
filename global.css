@@ -60,16 +60,9 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 250px;
-  background: url(./src/assets/images/header/background-header.png) center / cover no-repeat;
-  color: #fff;
-}
-.header article {
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  height: 100%;
-  padding: 20px;
+  height: 200px;
+  background-color: #FAF9F6;
+
 }
 .header h1 {
   font-family: "Zen Tokyo Zoo";
@@ -77,31 +70,21 @@ body {
   font-weight: 300;
   line-height: 70px;
   letter-spacing: 6px;
-  color: #fff;
+  color: var(--bkground2);
 }
-.search {
+
+.header div {
   display: flex;
-  width: 30%;
-  max-width: 250px;
-  padding: 4px 8px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background-color: #fff;
+  justify-content: flex-start;
+  align-items: flex-end;
+  text-align: right;
+  padding: 30px;
 }
-.search input {
-  border: none;
-  background: none;
-  font-size: 16px;
-  outline: none;
-  flex: 1;
-}
-.search span {
-  cursor: pointer;
-}
+
 .navbar {
   display: flex;
   justify-content: space-around;
-  padding: 10px 0;
+  padding: 5px 0;
   background-color: var(--bkground2);
   box-shadow: 0 2px 4px var(--shadow);
   gap: 10px;
@@ -109,7 +92,6 @@ body {
 .navbar a {
   text-align: center;
   width: 150px;
-  padding: 10px 0;
   border-radius: 10px;
   font-size: 1.1rem;
   letter-spacing: 1px;
@@ -118,23 +100,8 @@ body {
   text-decoration: none;
 }
 .navbar a:hover {
-  background-color: var(--details1);
-  transform: scale(1.05);
-}
-
-/*
-Bloco provisório
-*/
-.provisional {
-  max-width: 800px;
-  min-height: calc(100vh - 300px);
-  margin: 0 auto;
-  padding: 20px;
-}
-.provisional h2 {
-  text-align: center;
-  font-size: 2em;
-  color: var(--smoke);
+  font-weight: bold;
+  color: var(--details2);
 }
 
 /* 
@@ -248,15 +215,6 @@ Bloco provisório
   transition: background-color 0.3s;
   cursor: pointer;
 }
-.cart button:hover {
-  background-color: var(--details2);
-}
-.cart .quantity {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: var(--border-color);
-}
-
 .btn-addCart {
   display: block;
   text-align: center;
@@ -265,16 +223,15 @@ Bloco provisório
   padding: 10px;
   border: none;
   border-radius: 8px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: bold;
   background-color: var(--details1);
   color: var(--text-color);
-  transition: background-color 0.3s, transform 0.3s;
+  transition: background-color 0.3s;
   cursor: pointer;
 }
 .btn-addCart:hover {
   background-color: var(--details2);
-  transform: scale(1.02);
 }
 
 /*
@@ -321,6 +278,9 @@ footer {
   padding: 20px 0;
   background-color: var(--bkground1);
   gap: 10px;
+}
+.footer-right p {
+  color: var(--details2)
 }
 .footer-link-acess {
   font-weight: bold;

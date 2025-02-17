@@ -32,13 +32,9 @@
 
   /* Index */
   .section-one {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 40px 20px;
-    gap: 20px;
+    padding: 0px;
+    gap: 10px;
   }
   .section-one p {
     text-align: right;
@@ -52,7 +48,7 @@
   }
   .section-two p {
     max-width: 200px;
-    padding: 20px 0;
+    padding: 0px;
     font-size: 12px;
     letter-spacing: 1.2px;
   }  

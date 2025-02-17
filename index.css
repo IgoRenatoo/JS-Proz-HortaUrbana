@@ -37,7 +37,7 @@
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 1.5px;
-  color: brown;
+  color: #d1510e;
   border-top: solid 1px var(--text-color);
   border-bottom: solid 1px var(--text-color);
 }
@@ -51,8 +51,8 @@
   width: 600px;
   height: 600px;
   border-radius: 50%;
-  background-color: brown;
-  transform: translateX(-500px);
+  background-color: #d1510e;
+  transform: translateX(-400px);
 }
 
 .section-three {
@@ -73,6 +73,7 @@
 }
 .section-three img {
   width: 300px;
+  height: 300px;
   border-top-left-radius: 30%;
   border-top-right-radius: 30%;
 }
