@@ -102,12 +102,14 @@
   color: #fff;
 }
 .article-section p {
-  max-height: 100px;
+  text-align: left;
+  padding: 10px 0;
   line-height: 20px;
   letter-spacing: 0.8px;
   color: #fff;
 }
-.section-content {
+.div-content {
+  height: 350px;
   background: var(--bkground1);
   padding: 20px;
   border-radius: 8px;

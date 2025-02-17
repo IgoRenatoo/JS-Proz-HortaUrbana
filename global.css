@@ -148,40 +148,58 @@ Bloco provisório
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   padding: 20px;
   box-shadow: 0 2px 4px var(--shadow);
-  gap: 30px;
+  gap: 20px;
 }
 .item {
+  text-align: center;
   padding: 15px;
   border: 1px solid #ddd;
   border-radius: 10px;
   background-color: #fff;
   transition: box-shadow 0.3s;
-  overflow: hidden;
 }
 .item:hover {
   box-shadow: 0 2px 4px var(--shadow);
 }
 .item img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 15px;
+  text-align: center;
+  width: 200px;
+  height: 200px;
   border-radius: 8px;
 }
 .item h2 {
-  margin-bottom: 10px;
+  text-align: center;
+  height: 40px;
+  margin-bottom: 20px;
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--bkground2);
 }
 .item p {
+  text-align: left;
   margin-bottom: 10px;
   font-size: 1rem;
   line-height: 1.5;
   color: var(--border-color);
 }
-.description{
-  height: 60px;
+.description {
+  text-align: left;
 }
+.description button {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  background-color: transparent;
+  color: var(--border-color);
+  cursor: pointer;
+}
+/* .description button:hover {
+  box-shadow: 0 2px 6px var(--shadow);
+} */
 .item p strong {
   color: var(--details1);
 }
@@ -266,7 +284,7 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   max-width: 40%;
-  gap: 15px;
+  gap: 5px;
 }
 .footer-contact {
   display: flex;
@@ -274,7 +292,7 @@ footer {
   align-items: flex-start;
   text-align: right;
   width: 40%;
-  gap: 15px;
+  gap: 5px;
 }
 .footer-socials h3, .footer-content h3 {
   font-family: "Zen Tokyo Zoo", sans-serif;

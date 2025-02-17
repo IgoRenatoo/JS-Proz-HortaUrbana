@@ -19,7 +19,7 @@ function displayItensByCategory() {
       <p><strong>Preço:</strong> R$ ${item.price.toFixed(2)}</p>
       <p><strong>Fabricante:</strong> ${item.manufacturer}</p>
       <p><strong>Temporada:</strong> ${item.season.join(', ')}</p>
-      <button>Descrição</button>
+      <div class="description"><button>Descrição</button></div>
       <div class="cart">
         <button class="subItem">-</button>
         <span class="quantity">0</span>
