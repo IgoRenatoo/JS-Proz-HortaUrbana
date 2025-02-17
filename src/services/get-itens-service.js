@@ -19,7 +19,10 @@ function displayItensByCategory() {
       <p><strong>Preço:</strong> R$ ${item.price.toFixed(2)}</p>
       <p><strong>Fabricante:</strong> ${item.manufacturer}</p>
       <p><strong>Temporada:</strong> ${item.season.join(', ')}</p>
-      <div class="description"><button>Descrição</button></div>
+      <div class="description">
+        <button id="desc-btn">Descrição</button>
+        <p id="desc-text">${item.description}</p>
+      </div>
       <div class="cart">
         <button class="subItem">-</button>
         <span class="quantity">0</span>
@@ -28,6 +31,18 @@ function displayItensByCategory() {
       <button class="btn-addCart">Adicionar ao Carrinho</button>
     `
 
+    // Estrutura para exibir a descrição ao passar o mouse.
+    const descButton = thisItem.querySelector('#desc-btn')
+    const descText = thisItem.querySelector('#desc-text')
+
+    descButton.addEventListener('mouseover', () => {
+      descText.style.display = 'block'
+    })
+    descButton.addEventListener('mouseout', () => {
+      descText.style.display = 'none'
+    })
+
+    // Estrutura da quantidade dos itens para adição no carrinho.
     const subButton = thisItem.querySelector('.subItem')
     const addButton = thisItem.querySelector('.addItem')
     const quantityDisplay = thisItem.querySelector('.quantity')
@@ -48,6 +63,7 @@ function displayItensByCategory() {
   })
 }
 
+// Execução da função após carregamento completo da página.
 document.addEventListener('DOMContentLoaded', () => {
   displayItensByCategory()
 })
