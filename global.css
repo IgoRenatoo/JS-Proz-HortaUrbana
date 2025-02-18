@@ -41,25 +41,12 @@ body {
   width: 24px;
   height: 24px;
 }
-.cart-badge {
-  display: none;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  font-size: 7.5px;
-  background-color: red; 
-  color: white;
-  transform: translate(85%, 50%);
-}
 .welcome {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 32px;
-  padding: 3px 10px;
+  padding: 10px;
   background-color: var(--bkground1);
 }
 .welcome p {
@@ -204,7 +191,7 @@ body {
     Botão de adicionar ao carrinho
     Exibição da quantidade
 */
-.cart {
+.add-cart {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -214,7 +201,7 @@ body {
   background-color: var(--bkground-content);
   gap: 10px;
 }
-.cart button {
+.add-cart button {
   width: 30px;
   height: 30px;
   border: none;
@@ -224,7 +211,7 @@ body {
   color: var(--text-color);
   cursor: pointer;
 }
-.btn-addCart {
+.add-cart-btn {
   text-align: center;
   width: 100%;
   margin-top: 10px;
@@ -237,7 +224,7 @@ body {
   transition: background-color 0.3s;
   cursor: pointer;
 }
-.btn-addCart:hover {
+.add-cart-btn:hover {
   background-color: var(--details2);
 }
 
@@ -333,4 +320,58 @@ footer {
 }
 .footer-link-socials a[uk-icon="tiktok"]:hover {
   background-color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+.my-cart {
+  display: contents;
+}
+.cart-badge {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  font-size: 7.5px;
+  background-color: red; 
+  color: white;
+  transform: translate(85%, 50%);
+}
+
+.itens-cart {
+  border-collapse: collapse;
+}
+.itens-cart th,td {
+  border-bottom: 1px solid black;
+  text-align: left;
+  padding: 10px;
+  word-wrap: break-word; /* Garante a quebra da palavra */
+  white-space: normal; /* Permite que o texto quebre em várias linhas */
+}
+.exclud {
+  text-align: center;
+}
+.finish {
+  text-align: center;
+  width: 60%;
+  margin: 10px;
+  padding: 10px 0px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: var(--details1);
+  color: var(--text-color);
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.finish:hover {
+  background-color: var(--details2);
 }

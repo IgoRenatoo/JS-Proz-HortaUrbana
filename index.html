@@ -15,16 +15,16 @@
 
   <body> 
     <header>
-      <div class="welcome">
+      <section class="welcome">
         <p>Olá, sejam bem vindos!</p>
         <div>
-          <a href="./src/views/cart/cart.html">
-            <span class="cart-badge" id="quantityDisplay"></span>
+          <a id="myCart" class="my-cart" href="./src/views/cart/cart.html">
+            <span class="cart-badge" id="quantityInCart"></span>
             <img class="icon" src="./src/assets/images/header/mycart.png" alt="">
           </a>
           <span class="toggle" id="toggleMode"><img class="icon" src="./src/assets/images/header/flashlight.png" alt=""></span>
         </div>
-      </div>
+      </section>
       <section class="header">
         <dotlottie-player
           src="https://lottie.host/8a5aedea-a383-409c-84c6-94dbefae6223/Y2qjdUGToO.lottie"
@@ -73,11 +73,11 @@
           </p>
         </div>
         <div class="section-three">
-          <button>
+          <a href="#vegetable">
             <h2>Hortaliças</h2>
             <img src="./src/assets/images/home/image-4-home.png" alt="">
-          </button>
-          <button>
+          </a>
+          <a href="#planting">
             <h2>Tipos de Plantio</h2>
             <dotlottie-player
               src="https://lottie.host/0ddd950b-9ade-43f5-96fb-60fa49c499df/XHUL47mLQc.lottie"
@@ -87,16 +87,16 @@
               loop
               autoplay
             ></dotlottie-player>
-          </button>
-          <button>
+          </a>
+          <a href="#fertilizer">
             <h2>Adubos</h2>
             <img src="./src/assets/images/home/image-5-home.png" alt="">
-          </button>
+          </a>
         </div>
       </section>
 <!--    Hortaliças    -->
       <section class="section-four">
-        <h1 class="title-section">Hortaliças</h1>
+        <h1 id="vegetable" class="title-section">Hortaliças</h1>
         <article class="article-section">
           <div class="div-content">
             <img src="./src/assets/images/home/image-10-home.png" alt="">
@@ -124,8 +124,7 @@
         </article>
 
 <!--    Tipos de plantio    -->
-
-        <h1 class="title-section">Tipos de Plantio</h1>
+        <h1 id="planting" class="title-section">Tipos de Plantio</h1>
         <article class="article-section">
           <div class="div-content">
             <img src="./src/assets/images/home/image-6-home.png" alt="">
@@ -151,8 +150,9 @@
             <p>Ótimos para quem tem espaço limitado, os jardins verticais permitem o cultivo de plantas em paredes ou estruturas verticais. Aprenda a criar seu próprio jardim vertical.</p>
           </div>
         </article>  
+
 <!--    Adubos    -->
-        <h1 class="title-section">Adubos</h1>
+        <h1 id="fertilizer" class="title-section">Adubos</h1>
         <article class="article-section">
           <div class="div-content">
             <img src="./src/assets/images/home/image-14-home.png" alt="">
@@ -215,6 +215,7 @@
         <p><a class="footer-link-acess" href="">Políticas de Privacidade</a></p>
       </section>
     </footer>
+    <script src="./src/services/get-itens-service.js"></script>
     <script src="./src/services/view-mode-service.js"></script>
     <script src="./src/views/cart/cart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>

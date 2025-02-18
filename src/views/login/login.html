@@ -12,18 +12,19 @@
   <link rel="stylesheet" href="../../assets/Responsive/480.css" />
 <body>
   <header>
-    <div class="welcome">
+    <section class="welcome">
       <p></p>
       <div>
-        <a href="../cart/cart.html">
-          <span class="cart-badge" id="quantityDisplay"></span>
+        <a id="myCart" class="my-cart" href="../cart/cart.html">
+          <span class="cart-badge" id="quantityInCart"></span>
           <img class="icon" src="../../assets/images/header/mycart.png" alt="">
         </a>
         <span class="toggle" id="toggleMode">
           <img class="icon" src="../../assets/images/header/flashlight.png" alt="">
         </span>
       </div>
-    </div>
+    </section>
+    
     <section class="header">
       <dotlottie-player
         src="https://lottie.host/8a5aedea-a383-409c-84c6-94dbefae6223/Y2qjdUGToO.lottie"
@@ -100,6 +101,7 @@
       <p><a class="footer-link-acess" href="">Políticas de Privacidade</a></p>
     </section>
   </footer>
+  <script src="../../services/get-itens-service.js"></script>
   <script src="../../services/view-mode-service.js"></script>
   <script src="./login.js" type="module" ></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>

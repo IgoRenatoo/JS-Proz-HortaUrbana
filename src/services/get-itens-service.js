@@ -26,12 +26,12 @@ function displayItensByCategory() {
         <button id="desc-btn">Descrição</button>
         <p id="desc-text">${item.description}</p>
       </div>
-      <div class="cart">
-        <button class="subItem">-</button>
-        <span class="quantity">0</span>
-        <button class="addItem">+</button>
+      <div class="add-cart">
+        <button id="subItem">-</button>
+        <span id="quantity">0</span>
+        <button id="addItem">+</button>
       </div>
-      <button class="btn-addCart" id="addCart">Adicionar ao Carrinho</button>
+      <button class="add-cart-btn" id="addCart">Adicionar ao Carrinho</button>
     `
 
     // Estrutura para exibir a descrição ao passar o mouse
@@ -46,9 +46,9 @@ function displayItensByCategory() {
     })
 
     // Estrutura da quantidade dos itens para adição no carrinho
-    const subButton = thisItem.querySelector('.subItem')
-    const addButton = thisItem.querySelector('.addItem')
-    const quantityDisplay = thisItem.querySelector('.quantity')
+    const subButton = thisItem.querySelector('#subItem')
+    const addButton = thisItem.querySelector('#addItem')
+    const quantityDisplay = thisItem.querySelector('#quantity')
     let quantity = 0
 
     subButton.addEventListener('click', () => {
