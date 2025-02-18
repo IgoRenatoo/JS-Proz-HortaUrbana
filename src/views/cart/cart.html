@@ -48,27 +48,18 @@
   </header>
 
   <main>
-    <div class="container">
-      <h2>Criar Conta</h2>
-      <form class="register-form" id="register-form">
-        <div class="input-data">
-          <label for="fullname">Nome Completo:</label>
-          <input type="text" id="fullname" name="fullname" placeholder="Digite seu nome completo" required>
-        </div>
-        <div class="input-data">
-          <label for="new-username">Usuário:</label>
-          <input type="text" id="new-username" name="new-username" placeholder="Crie um nome de usuário" required>
-        </div>
-        <div class="input-data">
-          <label for="new-password">Senha:</label>
-          <input type="password" id="new-password" name="new-password" placeholder="Crie uma senha (mínimo 4 caracteres)" minlength="4" required>
-        </div>
-        <button type="submit" class="btn-login">Registrar</button>
-        <div class="form-links">
-          <a href="../login/login.html" class="link-acess">Já tem uma conta? Faça Login</a>
-        </div>
-      </form>
-    </div>
+    <article id="myCart" class="my-cart">
+      <h3>Carrinho de compra</h3>
+      <table class="itens-cart">
+        <tr>
+          <th>Nome</th>
+          <th>Preço</th>
+          <th>Quantidade</th>
+          <th>Total</th>
+          <th>Excluir</th>
+        </tr>
+      </table>
+    </article>
   </main>
   
   <footer>

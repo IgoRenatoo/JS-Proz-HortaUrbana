@@ -25,6 +25,7 @@
   padding: 0;
   box-sizing: border-box;
   color: var(--text-color);
+  text-decoration: none;
 }
 body {
   margin: 0;
@@ -36,9 +37,22 @@ body {
   display: inline-block;
   cursor: pointer;
 }
-.toggle svg {
+.icon {
   width: 24px;
   height: 24px;
+}
+.cart-badge {
+  display: none;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  font-size: 7.5px;
+  background-color: red; 
+  color: white;
+  transform: translate(85%, 50%);
 }
 .welcome {
   display: flex;
@@ -201,22 +215,16 @@ body {
   gap: 10px;
 }
 .cart button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 30px;
   height: 30px;
   border: none;
   border-radius: 50%;
   font-size: 1.2rem;
-  font-weight: bold;
   background-color: var(--bkground2);
   color: var(--text-color);
-  transition: background-color 0.3s;
   cursor: pointer;
 }
 .btn-addCart {
-  display: block;
   text-align: center;
   width: 100%;
   margin-top: 10px;
@@ -224,7 +232,6 @@ body {
   border: none;
   border-radius: 8px;
   font-size: 1rem;
-  font-weight: bold;
   background-color: var(--details1);
   color: var(--text-color);
   transition: background-color 0.3s;
@@ -240,30 +247,29 @@ body {
 footer {
   font-size: 1.1rem;
   background-color: var(--bkground2);
-  color: var(--text-color);
 }
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 20px;
   gap: 10px;
+}
+.footer-content p, .footer-content h3, .footer-right p {
+  color: floralwhite;
 }
 .footer-socials {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   max-width: 40%;
   gap: 5px;
 }
 .footer-contact {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  text-align: right;
   width: 40%;
   gap: 5px;
 }
-.footer-socials h3, .footer-content h3 {
+.footer-socials h3, .footer-contact h3 {
   font-family: "Zen Tokyo Zoo", sans-serif;
   font-size: 1.2rem;
   font-weight: 100;
@@ -279,9 +285,7 @@ footer {
   background-color: var(--bkground1);
   gap: 10px;
 }
-.footer-right p {
-  color: var(--details2)
-}
+
 .footer-link-acess {
   font-weight: bold;
   color: var(--details1);

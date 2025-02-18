@@ -26,7 +26,7 @@
   gap: 5px;
 }
 .input-data label {
-  color: var(--text-color);
+  color: var(--details1);
 }
 .input-data input {
   display: block;
@@ -54,4 +54,14 @@
 }
 .btn-login:hover {
   background-color: var(--details2);
+}
+
+.link-acess {
+  width: fit-content;
+  color: var(--details1);
+  transition: color 0.3s;
+  text-decoration: none;
+}
+.link-acess:hover {
+  color: var(--details2);
 }

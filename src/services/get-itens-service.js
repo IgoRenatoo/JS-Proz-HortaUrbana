@@ -4,6 +4,9 @@ const main = document.querySelector('main')
 const category = main.getAttribute('id')
 // Filtra os itens pela categoria
 const itens = data_itens.filter(item => item.category.includes(category))
+// Busca ou cria um array para o carrinho
+const cart = JSON.parse(localStorage.getItem('cart')) || []
+
 
 // Função para exibir os itens da categoria
 function displayItensByCategory() {
@@ -28,10 +31,10 @@ function displayItensByCategory() {
         <span class="quantity">0</span>
         <button class="addItem">+</button>
       </div>
-      <button class="btn-addCart">Adicionar ao Carrinho</button>
+      <button class="btn-addCart" id="addCart">Adicionar ao Carrinho</button>
     `
 
-    // Estrutura para exibir a descrição ao passar o mouse.
+    // Estrutura para exibir a descrição ao passar o mouse
     const descButton = thisItem.querySelector('#desc-btn')
     const descText = thisItem.querySelector('#desc-text')
 
@@ -42,7 +45,7 @@ function displayItensByCategory() {
       descText.style.display = 'none'
     })
 
-    // Estrutura da quantidade dos itens para adição no carrinho.
+    // Estrutura da quantidade dos itens para adição no carrinho
     const subButton = thisItem.querySelector('.subItem')
     const addButton = thisItem.querySelector('.addItem')
     const quantityDisplay = thisItem.querySelector('.quantity')
@@ -57,13 +60,29 @@ function displayItensByCategory() {
     addButton.addEventListener('click', () => {
       quantity++
       quantityDisplay.textContent = quantity
+    })    
+
+    const addCart = thisItem.querySelector('#addCart')
+    addCart.addEventListener('click', () => {
+      if (quantity > 0 ) {
+        cart.push({
+          id: item.id,
+          name: item.name,
+          price: item.price,
+          quantity: quantity,
+          total: (item.price*quantity)
+        })
+        console.log(item, quantity, cart)
+        localStorage.setItem('cart', JSON.stringify(cart))
+      }
     })
    
     main.appendChild(thisItem)
   })
 }
 
-// Execução da função após carregamento completo da página.
+
+// Execução da função após carregamento completo da página
 document.addEventListener('DOMContentLoaded', () => {
   displayItensByCategory()
 })
