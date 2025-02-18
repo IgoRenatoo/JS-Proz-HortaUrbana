@@ -52,6 +52,19 @@ body {
 .welcome p {
   color: #fff;
 }
+.cart-badge {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  font-size: 7.5px;
+  background-color: red; 
+  color: white;
+  transform: translate(85%, 50%);
+}
 
 /*
   Bloco de config de todo Header
@@ -320,58 +333,4 @@ footer {
 }
 .footer-link-socials a[uk-icon="tiktok"]:hover {
   background-color: rgb(255, 255, 255);
-}
-
-
-
-
-
-
-
-
-.my-cart {
-  display: contents;
-}
-.cart-badge {
-  display: flex;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  font-size: 7.5px;
-  background-color: red; 
-  color: white;
-  transform: translate(85%, 50%);
-}
-
-.itens-cart {
-  border-collapse: collapse;
-}
-.itens-cart th,td {
-  border-bottom: 1px solid black;
-  text-align: left;
-  padding: 10px;
-  word-wrap: break-word; /* Garante a quebra da palavra */
-  white-space: normal; /* Permite que o texto quebre em várias linhas */
-}
-.exclud {
-  text-align: center;
-}
-.finish {
-  text-align: center;
-  width: 60%;
-  margin: 10px;
-  padding: 10px 0px;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  background-color: var(--details1);
-  color: var(--text-color);
-  transition: background-color 0.3s;
-  cursor: pointer;
-}
-.finish:hover {
-  background-color: var(--details2);
 }

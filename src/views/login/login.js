@@ -11,7 +11,8 @@ loginForm.addEventListener('submit', function (event) {
 
   if (user.username === username && user.password === password) {
     alert('Login realizado com sucesso!')
-    localStorage.setItem('loggedIn', JSON.stringify(isUser)) 
+    localStorage.setItem('loggedIn', JSON.stringify(true)) 
+    window.location.href = '../shop/micro-verde.html'
   } else {
     alert('Usuário ou senha incorretos!')
   }

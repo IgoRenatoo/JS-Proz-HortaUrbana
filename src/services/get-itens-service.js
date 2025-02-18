@@ -1,16 +1,50 @@
 import { data_itens } from '../database/itens-database.js'
 
+// Busca ou cria um array para o carrinho
+let cart = JSON.parse(localStorage.getItem('cart')) || []
+
 const main = document.querySelector('main')
 const category = main.getAttribute('id')
 // Filtra os itens pela categoria
 const itens = data_itens.filter(item => item.category.includes(category))
-// Busca ou cria um array para o carrinho
-const cart = JSON.parse(localStorage.getItem('cart')) || []
 
+const myCart = document.querySelector('#myCart')
+const quantityInCart = document.querySelector('#quantityInCart')
+
+// Função para atualizar o carrinho no localStorage e na interface
+function updateCartDisplay() {
+  localStorage.setItem('cart', JSON.stringify(cart))
+  quantityInCart.textContent = cart.length
+  console.log(cart)
+  myCart.style.display = (cart.length > 0) ? 'contents' : 'none'
+}
+
+function addCart(item, quantity) {
+  if (quantity <= 0) return
+
+  const currentItem = cart.find(current => current.id === item.id)
+
+  if (currentItem) {
+    currentItem.quantity += quantity
+    currentItem.total = currentItem.quantity * currentItem.price
+  } else {
+    cart.push({
+      id: item.id,
+      name: item.name,
+      price: item.price,
+      quantity: quantity,
+      total: item.price * quantity
+    })
+  }
+
+  updateCartDisplay()
+}
 
 // Função para exibir os itens da categoria
 function displayItensByCategory() {
-  main.innerHTML = ''
+  if (main && main.id) {
+    main.innerHTML = '';
+  }
 
   itens.forEach(item => {
     const thisItem = document.createElement('div')
@@ -49,6 +83,7 @@ function displayItensByCategory() {
     const subButton = thisItem.querySelector('#subItem')
     const addButton = thisItem.querySelector('#addItem')
     const quantityDisplay = thisItem.querySelector('#quantity')
+    const addCartButton = thisItem.querySelector('#addCart')
     let quantity = 0
 
     subButton.addEventListener('click', () => {
@@ -60,29 +95,23 @@ function displayItensByCategory() {
     addButton.addEventListener('click', () => {
       quantity++
       quantityDisplay.textContent = quantity
-    })    
-
-    const addCart = thisItem.querySelector('#addCart')
-    addCart.addEventListener('click', () => {
-      if (quantity > 0 ) {
-        cart.push({
-          id: item.id,
-          name: item.name,
-          price: item.price,
-          quantity: quantity,
-          total: (item.price*quantity)
-        })
-        console.log(item, quantity, cart)
-        localStorage.setItem('cart', JSON.stringify(cart))
+    })
+    addCartButton.addEventListener('click', () => {
+      const logged = localStorage.getItem('loggedIn')
+      if(!logged){
+        return alert('Necessário realizar login!')
       }
+      addCart(item, quantity)
+      quantity = 0
+      quantityDisplay.textContent = quantity
     })
    
     main.appendChild(thisItem)
   })
 }
 
-
 // Execução da função após carregamento completo da página
 document.addEventListener('DOMContentLoaded', () => {
   displayItensByCategory()
+  updateCartDisplay()
 })

@@ -1,0 +1,55 @@
+/* Estilização do Carrinho */
+.my-cart {
+  max-width: 900px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.my-cart h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* Tabela do Carrinho */
+.itens-cart {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.itens-cart th,
+.itens-cart td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.itens-cart th {
+  background-color: #4caf50;
+  color: white;
+}
+
+.itens-cart tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.itens-cart tr:hover {
+  background-color: #ddd;
+}
+
+.itens-cart td button {
+  background: #e53935;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.itens-cart td button:hover {
+  background: #c62828;
+}
