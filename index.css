@@ -96,6 +96,13 @@
   font-family: cursive;
   letter-spacing: 2px;
 }
+.div-content {
+  width: 30%;
+  height: 350px;
+  background: var(--bkground1);
+  padding: 10px;
+  border-radius: 8px;
+}
 .article-section {
   display: flex;
   justify-content: center;
@@ -117,10 +124,4 @@
   line-height: 20px;
   letter-spacing: 0.8px;
   color: #fff;
-}
-.div-content {
-  height: 350px;
-  background: var(--bkground1);
-  padding: 10px;
-  border-radius: 8px;
 }

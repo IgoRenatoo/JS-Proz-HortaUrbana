@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horta Urbana</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="../../../global.css">
+  <link rel="stylesheet" href="payment.css">
+  <link rel="stylesheet" href="../../assets/Responsive/480.css" />
+<body>
+  <header>
+    <section class="welcome">
+      <p></p>
+      <div>
+        <a id="myCart" class="my-cart" href="../cart/cart.html">
+          <span class="cart-badge" id="quantityInCart"></span>
+          <img class="icon" src="../../assets/images/header/mycart.png" alt="">
+        </a>
+        <span class="toggle" id="toggleMode">
+          <img class="icon" src="../../assets/images/header/flashlight.png" alt="">
+        </span>
+      </div>
+    </section>
+    
+    <section class="header">
+      <dotlottie-player
+        src="https://lottie.host/8a5aedea-a383-409c-84c6-94dbefae6223/Y2qjdUGToO.lottie"
+        background="transparent"
+        speed="1"
+        style="width: 150px; height: 150px"
+        loop
+        autoplay
+      ></dotlottie-player>
+      <h1>Horta Urbana</h1>
+    </section>
+
+    <nav class="navbar">
+      <a href="../../../index.html">Início</a>
+      <a href="../shop/micro-verde.html">Micro-verde</a>
+      <a href="../shop/legumes.html">Legumes</a>
+      <a href="../shop/temperos.html">Tempero</a>
+      <a href="../shop/frutas.html">Frutas</a>
+      <a href="../shop/flores.html">Flores</a>
+      <a href="../login/login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="payment-container">
+      <h2>Pagamento</h2>
+      <div id="fullValue"></div>
+  
+      <!-- Seleção de Método de Pagamento -->
+      <label for="paymentMethod">Escolha o meio de pagamento:</label>
+      <select id="paymentMethod">
+        <option value="" disabled selected>Selecionar pagamento</option>
+        <option value="pix">Pix</option>
+        <option value="cartao-debito">Cartão de Débito</option>
+        <option value="cartao-credito">Cartão de Crédito</option>
+      </select>
+  
+      <!-- CPF para Pix -->
+      <div id="cpfField" class="cpf-field">
+        <label for="cpf">CPF do Titular:</label>
+        <input type="text" id="cpf" placeholder="Digite o CPF">
+      </div>
+  
+      <!-- Campos para Cartão -->
+      <div id="cardField" class="card-field">
+        <label for="cardNumber">Número do Cartão:</label>
+        <input type="text" id="cardNumber" placeholder="Digite o número do cartão">
+  
+        <label for="date">Data de Vencimento:</label>
+        <input type="text" id="expiryDate" placeholder="MM/AA">
+  
+        <label for="cvv">Código de Segurança:</label>
+        <input type="text" id="cvv" placeholder="CVV">
+      </div>
+  
+      <!-- Cupom de Desconto -->
+      <label for="discount">Cupom de Desconto:</label>
+      <input type="text" id="discount" placeholder="Digite seu cupom">
+      <button id="applyDiscountBtn" class="discount">Aplicar Cupom</button>
+  
+      <!-- Finalizar Compra -->
+      <div class="payment-buttons">
+        <button id="finishBuy">Finalizar Compra</button>
+      </div>
+    </section>
+  </main>
+  
+  
+  <footer>
+    <section class="footer-content">
+      <article class="footer-socials">
+        <h3>HORTA URBANA</h3>
+        <p>
+          Inscreva-se em nossa
+          <a class="footer-link-acess" href="">Newsletter</a> para receber dicas e
+          novidades sobre horta em casa!
+        </p>
+        <p>
+          Siga-nos nas redes sociais para se inspirar e compartilhar suas
+          experiências!
+        </p>
+        <div class="footer-link-socials">
+          <a href="" uk-icon="instagram"></a>
+          <a href="" uk-icon="facebook"></a>
+          <a href="" uk-icon="linkedin"></a>
+          <a href="" uk-icon="whatsapp"></a>
+          <a href="" uk-icon="x"></a>
+          <a href="" uk-icon="tiktok"></a>
+        </div>
+      </article>
+      <article class="footer-contact">
+        <h3>CONTATOS</h3>
+        <p>Email: suporte@hortaurbana.com.br</p>
+        <p>Telefone: 0800 743 25 25</p>
+        <p>Endereço: Rua da Horta 123, Bahia - Ilhéus</p>
+      </article>
+    </section>
+    <section class="footer-right">
+      <p>HortaUrbana - 2024 - Todos os Direitos Reservados.</p>
+      <p><a class="footer-link-acess" href="">Políticas de Privacidade</a></p>
+    </section>
+  </footer>
+  <script type="module" src="./payment.js"></script>
+  <script type="module" src="../../services/get-itens-service.js"></script>
+  <script type="module" src="../../services/view-mode-service.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+</body>
+</html>
