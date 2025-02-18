@@ -1,25 +1,28 @@
 .light {
+  --bkground0: rgb(250, 250, 245);
   --bkground1: rgb(40, 55, 25);
   --bkground2: rgb(100, 110, 55);
   --bkground-content: rgb(255, 250, 225);
   --border-color: black;
   --text-color: black;
   --shadow: rgb(0, 0, 0, 0.2);
-  --details1: rgb(190, 110, 40);
-  --details2: rgb(220, 160, 95);
+  --details1: rgb(200, 120, 50);
+  --details2: rgb(230, 170, 105);
   --smoke: rgb(75, 175, 80);
 }
 .dark {
-  --bkground1: rgb(10, 15, 50);
-  --bkground2: rgb(30, 40, 100);
-  --bkground-content: rgb(5, 10, 45);
-  --border-color: rgb(200, 200, 255);
-  --text-color: #f0f0f0;
-  --shadow: rgb(255, 255, 255);
-  --details1: rgb(80, 170, 250);
-  --details2: rgb(100, 200, 255);
-  --smoke: rgb(130, 75, 180);
+  --bkground0: rgb(245, 240, 230); /* Bege claro */
+  --bkground1: rgb(60, 40, 20); /* Marrom escuro */
+  --bkground2: rgb(90, 60, 30); /* Marrom médio */
+  --bkground-content: rgb(140, 90, 50); /* Marrom caramelo */
+  --border-color: rgb(180, 140, 100); /* Marrom claro */
+  --text-color: #f5e9dc; /* Tom creme para melhor contraste */
+  --shadow: rgb(205, 150, 100); /* Sombra marrom suave */
+  --details1: rgb(190, 150, 110); /* Detalhe marrom claro */
+  --details2: rgb(230, 175, 115); /* Detalhe marrom médio */
+  --smoke: rgb(75, 175, 80); /* Marrom esfumaçado */
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -61,7 +64,7 @@ body {
   height: 10px;
   border-radius: 50%;
   font-size: 7.5px;
-  background-color: red; 
+  background-color: rgb(225, 60, 50); 
   color: white;
   transform: translate(85%, 50%);
 }
@@ -75,7 +78,7 @@ body {
   align-items: center;
   text-align: center;
   height: 200px;
-  background-color: #FAF9F6;
+  background-color: var(--bkground0);
 
 }
 .header h1 {
@@ -128,7 +131,6 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   padding: 20px;
-  box-shadow: 0 2px 4px var(--shadow);
   gap: 20px;
 }
 .item {
@@ -140,7 +142,7 @@ body {
   transition: box-shadow 0.3s;
 }
 .item:hover {
-  box-shadow: 0 2px 4px var(--shadow);
+  box-shadow: 0 2px 4px var(--smoke);
 }
 .item img {
   text-align: center;

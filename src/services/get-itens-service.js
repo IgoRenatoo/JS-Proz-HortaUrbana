@@ -41,7 +41,7 @@ function addCart(item, quantity) {
 }
 
 // Função para exibir os itens da categoria
-function displayItensByCategory() {
+export function displayItensByCategory() {
   if (main && main.id) {
     main.innerHTML = '';
   }

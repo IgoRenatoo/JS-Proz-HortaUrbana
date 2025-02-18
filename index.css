@@ -10,8 +10,9 @@
 .section-one p {
   text-align: right;
   max-width: 700px;
-  padding: 20px;
+  padding: 20px;  
   font-size: 16px;
+  font-weight: bold;
   letter-spacing: 1.5px;
   border-top: solid 1px var(--text-color);
   border-bottom: solid 1px var(--text-color);
@@ -37,7 +38,7 @@
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 1.5px;
-  color: #d1510e;
+  color: var(--text-color);
   border-top: solid 1px var(--text-color);
   border-bottom: solid 1px var(--text-color);
 }

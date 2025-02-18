@@ -1,17 +1,22 @@
 /* Estilização do Carrinho */
-.my-cart {
-  max-width: 900px;
+.section-cart{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 60%;
   margin: 20px auto;
-  background: white;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  background: var(--bkground0);
+  box-shadow: 0 2px 4px var(--smoke);
+  gap: 10px;
 }
-
-.my-cart h3 {
+.section-cart h3 {
   text-align: center;
   font-size: 24px;
-  margin-bottom: 15px;
+  color: var(--bkground1);
 }
 
 /* Tabela do Carrinho */
@@ -19,37 +24,55 @@
   width: 100%;
   border-collapse: collapse;
 }
-
-.itens-cart th,
-.itens-cart td {
-  padding: 10px;
+.itens-cart th, .itens-cart td {
   text-align: center;
-  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  color: black;
 }
-
 .itens-cart th {
-  background-color: #4caf50;
-  color: white;
+  background-color: var(--bkground2);
+  color: white;  
 }
-
-.itens-cart tr:nth-child(even) {
+.itens-cart th:first-child {
+  border-top-left-radius: 8px;
+}
+.itens-cart th:last-child {
+  border-top-right-radius: 8px;
+}
+.itens-cart tr:nth-child(even) {  
   background-color: #f2f2f2;
 }
-
 .itens-cart tr:hover {
-  background-color: #ddd;
+  background-color: #d2d2d2;
 }
 
 .itens-cart td button {
-  background: #e53935;
-  color: white;
-  border: none;
+  background: rgb(225, 60, 50);
   padding: 6px 10px;
-  cursor: pointer;
+  border: none;
   border-radius: 4px;
+  color: white;
   transition: 0.3s;
+  cursor: pointer;
+}
+.itens-cart td button:hover {
+  background: rgb(200, 40, 40);
 }
 
-.itens-cart td button:hover {
-  background: #c62828;
+.finish-btn {
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: rgb(225, 60, 50);
+  color: var(--text-color);
+  transition: background-color 0.3s;
+  cursor: pointer;
 }
+.finish-btn:hover {
+  background: rgb(200, 40, 40);
+}
+
