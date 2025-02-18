@@ -8,7 +8,7 @@ export const data_itens = [
     category: 'Micro-verde',
     group: 'Sem peletização',
     manufacturer: 'BRSEEDS',
-    season: ['Todo ano'],
+    season: ['Ano todo'],
     life: 10,
     measure: '5 gramas',
     price: 3.80
@@ -75,7 +75,7 @@ export const data_itens = [
     category: 'Frutas',
     group: 'Sem peletização',
     manufacturer: 'BRSEEDS',
-    season: ['Perene'],
+    season: ['Ano todo'],
     life: 240-300,
     measure: '600mg',
     price: 4.5
@@ -88,7 +88,7 @@ export const data_itens = [
     category: 'Frutas',
     group: 'Sem peletização',
     manufacturer: 'BRSEEDS',
-    season: ['Perene'],
+    season: ['Ano todo'],
     life: 120,
     measure: '2 gramas',
     price: 4.48
@@ -114,7 +114,7 @@ export const data_itens = [
     category: 'Fruta',
     group: 'Sem peletização',
     manufacturer: 'BRSEEDS',
-    season: ['Anual'],
+    season: ['Ano todo'],
     life: 90,
     measure: '500mg',
     price: 3.80
@@ -127,7 +127,7 @@ export const data_itens = [
     category: 'Fruta',
     group: 'Sem peletização',
     manufacturer: 'BRSEEDS',
-    season: ['Anua'],
+    season: ['Ano todo'],
     life: 110,
     measure: '600mg',
     price: 3.8
@@ -142,7 +142,7 @@ export const data_itens = [
     category: 'Tempero',
     group: 'Sem peletização',
     manufacturer: 'BRSEEDS',
-    season: ['Perene'],
+    season: ['Ano todo'],
     life: 90-120,
     measure: '50mg',
     price: 5.2
@@ -155,7 +155,7 @@ export const data_itens = [
     category: 'Tempero',
     group: 'Sem peletização',
     manufacturer: 'Isla',
-    season: ['Anual'],
+    season: ['Ano todo'],
     life: 50-70,
     measure: '3 gramas',
     price: 3.8
@@ -168,7 +168,7 @@ export const data_itens = [
     category: 'Tempero',
     group: 'Peletizada',
     manufacturer: 'Isla',
-    season: ['Anual'],
+    season: ['Ano todo'],
     life: 35,
     measure: '3 gramas',
     price: 4.5
@@ -181,7 +181,7 @@ export const data_itens = [
     category: 'Tempero',
     group: 'Sem peletização',
     manufacturer: 'Isla',
-    season: ['Anual'],
+    season: ['Ano todo'],
     life: 60-90,
     measure: '200mg',
     price: 3.9
@@ -285,7 +285,7 @@ export const data_itens = [
     id: 5002,
     name: 'Mix Sementes Beterraba-colorida',
     pic: '5002-mix sementes beterraba-colorida1.png',
-    description: 'O cultivo de beterraba é relativamente fácil e pode ser realizado tanto em vasos quanto em canteiros. As sementes devem ser plantadas em solo fértil, bem drenado e em local ensolarado. As beterrabas são ricas em nutrientes, como ferro, potássio e vitaminas do complexo B, além de possuírem propriedades antioxidantes..',
+    description: 'O cultivo de beterraba é relativamente fácil e pode ser realizado tanto em vasos quanto em canteiros. As beterrabas são ricas em nutrientes, como ferro, potássio e vitaminas do complexo B, além de possuírem propriedades antioxidantes.',
     category: 'Legumes',
     group: 'Sem peletização',
     manufacturer: 'Planeta Semente',
@@ -298,7 +298,7 @@ export const data_itens = [
     id: 5003,
     name: 'Mix Semente Cenouras Sortidas',
     pic: '5003- mix sementes cenouras-sortidas.png',
-    description: 'Apresentando o nosso novo pacote de sementes de cenouras sortidas! Com este produto, você pode experimentar uma variedade de cenouras de diferentes tipos e cores, tudo em um único pacote conveniente.',
+    description: 'Apresentando o nosso novo pacote de sementes de cenouras sortidas! Com este produto, você pode experimentar uma variedade de cenouras de diferentes tipos e cores, tudo em um único pacote.',
     category: 'Legumes',
     group: 'Sem peletização',
     manufacturer: 'Planeta Semente',
