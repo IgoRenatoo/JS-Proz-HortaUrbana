@@ -6,19 +6,16 @@ O projeto Horta Urbana tem como objetivo proporcionar aos integrantes a experiê
 
 <div align="center">
   <p>👀 Prévia</p>
-  <img width="400px" src="./src/assets/images/previa.png" alt="Prévia do projeto">
+  <img width="400px" src="./src/assets/images/preview/2preview.png" alt="Prévia do projeto">
 </div><br>
 
-**Colaboradores:** Igor Oliveira, Evanói Nogueira, Flávia Kethellen, Jessica Damaceno.
-
+**Colaboradores:**
 | Nome             | Stack     |
 | ---------------- | --------- |
 | Igor Oliveira    | Back-end  |
 | Evanói Nogueira  | Front-end |
-| Flávia Kethelen  | Front-end |
-| Jéssica Damaceno | Front-end |
 
-> **Status:** <span> Em Desenvolvimento 🚧
+> **Status:** Concluído ✅
 
 ## 📜 Índice
 
@@ -36,8 +33,12 @@ O projeto Horta Urbana tem como objetivo proporcionar aos integrantes a experiê
 
 ## ✅ Conceitos Aprendidos
 
-- Gestão e desenvolvimento de projetos
-- Colaboração através de Fork/Pull Request
+1. Gestão e desenvolvimento de projetos
+2. Colaboração através de Fork/Pull Request
+3. Manipulação de DOM
+4. Desenvolvimento de design
+5. Boas práticas de clean code
+6. Manipulação do localStorage
 
 ## 🛠 Tecnologias Utilizadas
 
@@ -65,11 +66,15 @@ Para visualizar o projeto, após instalação abra o arquivo `index.html` em seu
 
 ## 🧩 Funcionalidades
 
-Área aguardando desenvolvimento
+1. Criar conta
+2. Realizar LogIn
+3. Carrinho de compra
+4. Metodo de pagamento fictício, sem adição de framework ou bibliotecas.
+5. LightMode / DarkMode
 
 ## ⏳ Pendências
 
-Área aguardando desenvolvimento
+Pendências podem ser visualizadas na pasta `changelog`, lá foi documentado todos os próximos passos pendentes do projeto.
 
 ## 🤝 Contribuição
 
@@ -85,49 +90,8 @@ Contribuições são bem-vindas! Se você deseja contribuir com este projeto, si
 
 ## 💡 Informações adicionais
 
-> Padronização de commit
+Consulte a aba `Wiki` do projeto para instruções de PullRequest ~> [Wiki Horta Urbana](https://github.com/IgoRenatoo/JS-Proz-HortaUrbana/wiki/Informa%C3%A7%C3%B5es-Adicionais)
 
-Antes de iniciar um commit, você deve executar os seguintes passos:
-
-1. Verificar se há alterações no repositório remoto:
-   <pre>git pull https://github.com/IgoRenatoo/JS-Proz-HortaUrbana.git</pre>
-
-2. Evitar o uso do comando 'git add .' , dar preferência ao gerenciamento pelo `Source Control` ~> CTRL+SHIFT+G
-
-3. Utilizar descrição padronizada
-
-   ```
-   "feat: :sparkles: Introduzido recurso X, Adicionado nova funcionalidade Y"
-
-   "feat: :art: Melhorado organização ou formato do código"
-
-   "feat: :lipstick: Atualizado / alterado tudo que envolve design CSS"
-
-   "feat: :construction: Recurso X pendente finalizar desenvolvimento"
-
-   "refactor: :recycle: Refatorado recurso X"
-
-   "chore: :wrench: Alteração nas funcionalidades"
-
-   "fix: :bug: Corrigido bug que causava falha em X"
-
-   "docs: :memo: Atualizado documentação X"
-
-   "deploy: :rocket: Etapa finalizado"
-   ```
-
-4. Detalhar o que foi feito na descrição dos commit
-
-   ```
-   Segui esse padrão para comentarios
-
-   git commit -m (abre a mensagem com ' " ') "Digite a sua mensagem(enter para adicionar comentarios)
-   > (Enter de novo para saltar uma linha)
-   > - Descrição do que foi feito
-   > - Descrição do que foi feito"(' " 'fecha a mensagem do commit com os comentarios)
-
-   git push para enviar as alterações para a sua branch remota
-   ```
 
 ## 🔓 Licença
 
@@ -135,6 +99,6 @@ Este projeto está licenciado sob a Licença MIT.
 
 ## 🏁 CONCLUSÃO
 
-Área aguardando desenvolvimento
+O projeto <b>Horta Urbana</b> reforçou conhecimentos técnicos essenciais, como `manipulação de DOM` e o uso de persistência de dados utilizando o `localStorage`. Futuras melhorias podem incluir um sistema de pagamentos online, notificações personalizadas e otimizações de performance para aprimorar ainda mais a experiência do usuário.
 
 🧑‍💻 "Programar é como escrever um livro. A única diferença é que se você cometer um erro, o código não vai te deixar ler até corrigir." 😅
